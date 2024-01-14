@@ -6,7 +6,13 @@ import org.slf4j.LoggerFactory
 
 val useJavaVer: String by project
 
+val kotlinVersion: String by project
+val kotlinCoroutinesVersion: String by project
+val kotlinxSerializationVersion: String by project
 val kotlinxDateTimeVersion: String by project
+
+val kotlinxSerializationPluginVersion: String by project
+val jsoupVersion: String by project
 
 val kotlinLoggingVersion: String by project
 val slf4jVersion: String by project
@@ -64,6 +70,21 @@ java {
 
 dependencies {
     implementation(platform(kotlin("bom")))
+    implementation(platform(kotlin("bom")))
+    implementation(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:$kotlinCoroutinesVersion"))
+    implementation(platform("org.jetbrains.kotlinx:kotlinx-serialization-bom:$kotlinxSerializationVersion"))
+
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-slf4j")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-debug")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:$kotlinxDateTimeVersion")
+
+    implementation("org.jsoup:jsoup:$jsoupVersion")
+
     testImplementation(platform("org.junit:junit-bom:$jupiterVersion"))
     testImplementation(platform("io.kotest:kotest-bom:$kotestVersion"))
     testImplementation(platform("org.assertj:assertj-bom:$assertjVersion"))
