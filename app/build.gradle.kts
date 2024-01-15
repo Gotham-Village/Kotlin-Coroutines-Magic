@@ -70,7 +70,6 @@ java {
 
 dependencies {
     implementation(platform(kotlin("bom")))
-    implementation(platform(kotlin("bom")))
     implementation(platform("org.jetbrains.kotlinx:kotlinx-coroutines-bom:$kotlinCoroutinesVersion"))
     implementation(platform("org.jetbrains.kotlinx:kotlinx-serialization-bom:$kotlinxSerializationVersion"))
 
