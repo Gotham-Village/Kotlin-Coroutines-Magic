@@ -1,6 +1,6 @@
 = Kotlin: Coroutines Magic
 Aaron aaronfllr <45025327+aaronfllr@users.noreply.github.com>
-v0.1, Thursday 16 November 2023 07:14:25 PM EST
+v0.1, Sunday 14 January 2024 10:33:22 AM EST
 :description: Nice and clean Kotlin Coroutines Learning Trail to follow along with my community along my own journey.
 :sectnums:
 :sectanchors:
