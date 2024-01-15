@@ -1,0 +1,27 @@
+#-------------------------------------------------------------------------------#
+#               Qodana analysis is configured by qodana.yaml file               #
+#             https://www.jetbrains.com/help/qodana/qodana-yaml.html            #
+#-------------------------------------------------------------------------------#
+version: "1.0"
+
+profile:
+  name: qodana.recommended
+
+# noinspection YAMLSchemaValidation
+projectJDK: 17
+
+linter: jetbrains/qodana-jvm:latest
+
+include:
+  - name: CheckDependencyLicenses
+  - name: VulnerableLibrariesGlobal
+  - name: JvmCoverageInspection
+
+fixesStrategy: apply
+
+licenseRules:
+  - keys:
+      - "PROPRIETARY-LICENSE"
+    allowed: ["CC0-1.0", "CPL-1.0", "CC-BY-4.0", "EPL-1.0", "CDDL-1.0", "LGPL-2.1-or-later", "LGPL-2.1-only"]
+
+failThreshold: 0
