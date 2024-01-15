@@ -1,0 +1,35 @@
+= Kotlin: Coroutines Magic
+Aaron aaronfllr <45025327+aaronfllr@users.noreply.github.com>
+v0.1, Thursday 16 November 2023 07:14:25 PM EST
+:description: Nice and clean Kotlin Coroutines Learning Trail to follow along with my community along my own journey.
+:sectnums:
+:sectanchors:
+:sectlinks:
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:toc: preamble
+:toclevels: 2
+:toc-title: Kotlin Coroutines
+:keywords: Kotlin, Coroutines, Learning
+:imagesdir: ./assets/img
+ifdef::env-name[:relfilesuffix: .adoc]
+
+Welcome to https://github.com/aaronfllr[Aaron's] Kotlin Coroutines Learning Trail.
+I made this journey together with and for my community.
+We had a lot of fun unraveling this amazing topic together, and I hope that you will enjoy this journey as much as we have.
+
+First and foremost, here are some handy resources to get you started:
+
+- https://play.kotlinlang.org/byExample/overview[Play: Learn Kotlin by Example]
+- https://play.kotlinlang.org/koans/overview[Play: Kotlin Koans]
+- https://kotlinlang.org/docs/reference/coroutines-overview.html[Kotlin Coroutines Overview]
+- https://github.com/Kotlin/coroutines-examples/tree/master/examples[Examples and Sources]
+- And, last but not least --> https://play.kotlinlang.org/[_**The Playground!**_]
+
+== Kotlin Coroutines Journey
+
+ToDo: synopses links to all the classes we made along the way
