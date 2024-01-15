@@ -29,15 +29,6 @@ out/
 .Trash-*
 
 
-### Gradle template
-.gradle
-**/build/
-!src/**/build/
-gradle-app.setting
-!gradle-wrapper.jar
-!gradle-wrapper.properties
-
-
 ### macOS template
 .DS_Store
 # Icon must end with two \r
@@ -62,3 +53,12 @@ Icon
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+### Gradle template
+.gradle
+**/build/
+!src/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+

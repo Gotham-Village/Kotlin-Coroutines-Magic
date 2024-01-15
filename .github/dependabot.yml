@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    push:
+      branches:
+        - main
+        - 3-bind-basic-actions-for-the-community-norms
+        - 'releases/*'
+        - 'features/*'
+    schedule:
+      interval: "daily"

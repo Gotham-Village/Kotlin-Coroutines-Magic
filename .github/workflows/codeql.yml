@@ -1,0 +1,48 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches:
+      - main
+      - 3-bind-basic-actions-for-the-community-norms
+      - 'releases/*'
+      - 'features/*'
+
+  pull_request:
+    branches:
+      - main
+      - 3-bind-basic-actions-for-the-community-norms
+      - 'releases/*'
+      - 'features/*'
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: '43 15 * * 0'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'java-kotlin' ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: 'java-kotlin'
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v3
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:java-kotlin"
