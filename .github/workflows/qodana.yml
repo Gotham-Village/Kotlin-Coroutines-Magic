@@ -1,15 +1,21 @@
 name: "Qodana"
-version: 1.0
 
 on:
-  workflow_dispatch:
-  pull_request:
   push:
     branches:
       - main
       - 3-bind-basic-actions-for-the-community-norms
       - 'releases/*'
       - 'features/*'
+
+  pull_request:
+    branches:
+      - main
+      - 3-bind-basic-actions-for-the-community-norms
+      - 'releases/*'
+      - 'features/*'
+
+  workflow_dispatch:
 
 jobs:
   qodana:

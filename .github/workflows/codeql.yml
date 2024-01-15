@@ -7,12 +7,15 @@ on:
       - 3-bind-basic-actions-for-the-community-norms
       - 'releases/*'
       - 'features/*'
+
   pull_request:
     branches:
       - main
       - 3-bind-basic-actions-for-the-community-norms
       - 'releases/*'
       - 'features/*'
+
+  workflow_dispatch:
 
   schedule:
     - cron: '43 15 * * 0'
