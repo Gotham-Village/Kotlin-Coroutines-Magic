@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 = Kotlin Coroutines Magic
 :showtitle:
 :page-title: Introduction to Kotlin Coroutines
