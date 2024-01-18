@@ -37,9 +37,7 @@ jobs:
             docs
       - name: Realign contents
         run: |
-          pwd
           mv docs/** .
-          ls -lha ${{ github.workspace }}
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v3
