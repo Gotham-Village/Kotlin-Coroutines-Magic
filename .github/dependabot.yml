@@ -5,8 +5,6 @@ updates:
     push:
       branches:
         - main
-        - 3-bind-basic-actions-for-the-community-norms
-        - 'releases/*'
-        - 'features/*'
+        - 4-bind-basic-jekyll-site
     schedule:
       interval: "daily"

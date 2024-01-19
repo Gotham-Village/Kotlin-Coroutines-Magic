@@ -1,0 +1,22 @@
+title: Kotlin Coroutines Learning Trail
+email: 45025327+aaronfllr@users.noreply.github.com
+description: >-
+    Placeholder for the Kotlin Coroutines Learning Trail.
+baseurl: ""
+url: ""
+twitter_username: aaronfllr
+github_username:  aaronfllr
+theme: minima
+plugins:
+  - jekyll-feed
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

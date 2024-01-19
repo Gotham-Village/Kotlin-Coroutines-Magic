@@ -1,0 +1,26 @@
+= Welcome: to Kotlin Coroutines
+Aaron aaronfllr <45025327+aaronfllr@users.noreply.github.com>
+v0.1, Monday 15 January 2024 04:34:11 PM EST
+:description: This is the beginning of the Kotlin Coroutines journey.
+:sectnums:
+:sectanchors:
+:sectlinks:
+:icons: font
+:tip-caption: 💡️
+:note-caption: ℹ️
+:important-caption: ❗
+:caution-caption: 🔥
+:warning-caption: ⚠️
+:toc: preamble
+:toclevels: 2
+:toc-title: Kotlin Coroutines
+:showtitle:
+:page-navtitle: Welcome to Kotlin Coroutines
+:page-excerpt: This is the beginning of the Kotlin Coroutines journey.
+:page-root: ../../../
+:keywords: Kotlin, Coroutines, Learning
+:imagesdir: ./assets/img
+ifdef::env-name[:relfilesuffix: .adoc]
+
+
+ToDo: you complete me ;)
