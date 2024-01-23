@@ -31,4 +31,5 @@ pluginManagement {
 }
 
 rootProject.name = "Kotlin-Coroutines-Magic"
-include("app")
+
+include("app", "lesson1")
