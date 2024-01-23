@@ -26,20 +26,20 @@ val jacocoToolVersion: String by project
 
 val repoKotlinDev: String by project
 
-val group: String by project
-val version: String by project
+private val log by lazy { LoggerFactory.getLogger(this::class.java) }
 
-private val log by lazy { LoggerFactory.getLogger(group) }
-
-log.warn(
-    """
+with(project) {
+    log.warn(
+        """
     
-    Kotlin Coroutines Magic build started.
-    ${group}::${version}
+    Configuring Demo Application Module;
+    Group:      $group
+    Name:       $name
+    Version:    $version
     
     """.trimIndent()
-)
-
+    )
+}
 
 plugins {
 
